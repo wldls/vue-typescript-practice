@@ -14,7 +14,7 @@ const mutations = {
 // vuex 내부적으로 이미 Mutation이라는 타입을 사용하고 있으므로 반드시 s를 붙여서 Mutations로 사용 (actions 등도 동일)
 type Mutations = typeof mutations;
 
-export { mutations, Mutations };
+export { mutations, MutationTypes, Mutations };
 
 // export default {
 //   SET_NEWS(state, news) {
