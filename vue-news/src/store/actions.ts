@@ -19,6 +19,7 @@ const actions = {
   async [ActionTypes.FETCH_NEWS](context: MyActionContext, payload?: any) {
     const { data } = await fetchNews();
     context.commit(MutationTypes.SET_NEWS, data);
+    return data;
   },
 };
 
